@@ -115,6 +115,7 @@ import makeWASocket from '@whiskeysockets/baileys'
     - [Mute/Unmute a Chat](#muteunmute-a-chat)
     - [Mark a Chat Read/Unread](#mark-a-chat-readunread)
     - [Delete a Message for Me](#delete-a-message-for-me)
+    - [INI CARA DELETE FOR ME (New)](#ini-cara-delete-for-me-new)
     - [Delete a Chat](#delete-a-chat)
     - [Star/Unstar a Message](#starunstar-a-message)
     - [Disappearing Messages](#disappearing-messages)
@@ -837,10 +838,11 @@ await sock.chatModify(
     jid
 )
 
-*INI CARA DELETE FOR ME YANG SEBENARNYA*
-`code:`
+```
+### INI CARA DELETE FOR ME (New)
+```ts
 let mess = await store.loadMessage(m.chat, m.quoted.id);
-await conn.chatModify(
+await sock.chatModify(
     {
         deleteForMe: {
             key: mess.key,
@@ -848,7 +850,7 @@ await conn.chatModify(
             deleteMedia: false
         }
     },
-    m.chat
+    jid
 );
 
 ```
