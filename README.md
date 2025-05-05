@@ -837,6 +837,20 @@ await sock.chatModify(
     jid
 )
 
+*INI CARA DELETE FOR ME YANG SEBENARNYA*
+`code:`
+let mess = await store.loadMessage(m.chat, m.quoted.id);
+await conn.chatModify(
+    {
+        deleteForMe: {
+            key: mess.key,
+            timestamp: mess.messageTimestamp.low,
+            deleteMedia: false
+        }
+    },
+    m.chat
+);
+
 ```
 ### Delete a Chat
 ```ts
