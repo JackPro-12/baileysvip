@@ -1,21 +1,16 @@
 {
-  "name": "baileys",
-  "version": "6.7.16",
-  "description": "WhatsApp API x Button by PL",
+  "name": "@jack-pro/baileys",
+  "version": "7.0.0",
+  "description": "WhatsApp API",
   "keywords": [
     "whatsapp",
     "js-whatsapp",
     "whatsapp-api",
     "whatsapp-web",
-    "whatsapp-chat",
-    "whatsapp-group",
-    "automation",
-    "multi-device"
+    "multi-device",
+    "newsletter",
+    "whatsapp-bot"
   ],
-  "homepage": "https://github.com/WhiskeySockets/Baileys",
-  "repository": {
-    "url": "git@github.com:WhiskeySockets/Baileys.git"
-  },
   "license": "MIT",
   "author": "Adhiraj Singh",
   "main": "lib/index.js",
